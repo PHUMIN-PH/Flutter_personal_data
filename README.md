@@ -1,6 +1,6 @@
 # personal_data
 
-A new Flutter project.
+CRUD Flutter project. 
 
 ## Getting Started
 
