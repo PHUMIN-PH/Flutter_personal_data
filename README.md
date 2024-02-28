@@ -1,6 +1,10 @@
-# personal_data
+# personal_data  TH/EN
 
-CRUD Flutter project. 
+CRUD Flutter project. Tutorail for Flutter Feeding data from web api. 
+
+== THIS REPOSITORIES OPENSOURCE MADE BY PHUWIS.DEV ===========
+== DEVEOPMENT FOR STRONG  FLUTTER COMUNITY COPY IT ===========
+== I'll KEEP COMING TO UPDATE /'\ TRY AND LEARNING TOGETHER ==
 
 ## Getting Started
 
