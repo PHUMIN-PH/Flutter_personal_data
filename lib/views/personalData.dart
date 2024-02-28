@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'package:personal_data/views/activity.dart';
+import 'package:personal_data/views/infoData.dart';
 import 'model/personalData_fetch.dart';
 
 class PersonalData extends StatefulWidget {
@@ -95,6 +96,18 @@ class _PersonalDataState extends State<PersonalData>
       backgroundColor: Colors.amber,
       title: const Text("Personal Data"),
       centerTitle: true,
+      actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.add_circle_outlined),
+            color: Colors.black,
+            tooltip: 'Go to the next page',
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => const InfoData(),
+              ));
+            },
+          ),
+        ],
       bottom: TabBar(
         controller: _tabController,
         tabs: const <Widget>[
