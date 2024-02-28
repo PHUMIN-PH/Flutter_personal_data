@@ -6,7 +6,9 @@ CRUD Flutter project. Tutorail for Flutter Feeding data from web api.
 == DEVEOPMENT FOR STRONG  FLUTTER COMUNITY COPY IT =========== <br />
 == I'll KEEP COMING TO UPDATE /'\ TRY AND LEARNING TOGETHER == <br />
 
-## Getting Started
+## GETTING STARTED
+
+Web api : https://phuwis.friendsnco.tech/V12/personaldata_api.php
 
 บรีฟ : สร้างแอปเก็บข้อมูลบุคคล ข้อมูลที่จะเก็บมี 2 ส่วนคือ ข้อมูลส่วนบุคคล และข้อมูลที่อยู่ตามบัตรประชาชน  <br />
 This project is test CRUD Personal data for a Flutter application.<br />
