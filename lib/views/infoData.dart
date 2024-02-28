@@ -8,7 +8,16 @@ class InfoData extends StatefulWidget {
 }
 
 class _InfoDataState extends State<InfoData> {
-  String cardid_text = "1 85006 456852 56 9";
+  String personal_idCard = "1 85006 456852 56 9";
+  String personal_nameTH = "วิภาวี มีโชค";
+  String personal_nameEN = "Vipawee meechock";
+  String personal_birthTH = "13 ธ.ค. 2558";
+  String personal_birthEN = "13 Dec 2015";
+  String personal_address = "999 Ladprao Bangkok Thailand.";
+  String personal_issueTH = "12 ก.พ. 2560";
+  String personal_issueEN = "12 Feb 2017";
+  String personal_expiryTH = "13 ก.พ. 2570";
+  String personal_expiryEN = "13 Feb 2017";
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +49,7 @@ class _InfoDataState extends State<InfoData> {
                 ),
                 Text(
                   'Thai National ID Card',
-                  style: TextStyle(fontSize: 17, color: Colors.blue[700]),
+                  style: TextStyle(fontSize: 17, color: TextColorEN,),
                 ),
               ],
             ),
@@ -56,22 +65,118 @@ class _InfoDataState extends State<InfoData> {
                     ),
                   ],
                 ),
-                SizedBox(width: 10,),
+                SizedBox(
+                  width: 10,
+                ),
                 Text(
-                  cardid_text,
+                  personal_idCard,
                   style: TextStyle(
                     fontSize: 17,
-                    color: Colors.blue[700],
+                    color: TextColorEN,
                   ),
                 )
               ],
             ),
-            Icon(
-              Icons.sim_card,
-              color: Colors.amber[400],)
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Image.asset(
+                      'assets/img/simcard.png',
+                      scale: 6,
+                    ),
+                  ],
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Row(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Text('ชื่อ นามสกุล'),
+                                SizedBox(
+                                  width: 17,
+                                ),
+                                Text(
+                                  personal_nameTH,
+                                  style: TextStyle(fontSize: 17),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text("Full Name"),
+                                SizedBox(
+                                  width: 15,
+                                ),
+                                Text(
+                                  personal_nameEN,
+                                  style: TextStyle(fontSize: 15,
+                                  color: TextColorEN),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text("เกิดวันที่"),
+                                SizedBox(
+                                  width: 17,
+                                ),
+                                Text(
+                                  personal_birthTH,
+                                  style: TextStyle(fontSize: 17),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text("Date of Birth"),
+                                SizedBox(
+                                  width: 15,
+                                ),
+                                Text(
+                                  personal_birthEN,
+                                  style: TextStyle(fontSize: 15,color: TextColorEN),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        Text("Ad: "),
+                        Text(personal_address),
+                      ],
+                    ),
+                    Text(personal_issueTH),
+                    Text("วันออกบัตร"),
+                    
+                  ],
+                ),
+              ],
+            ),
           ],
         ),
       ),
     );
   }
+
+  MaterialColor get TextColorEN => Colors.blue;
 }
